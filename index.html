@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pricing</title>
+    <style>
+        /* General Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Body Background */
+        body {
+            background-color: black;
+            color: white; /* Default text color */
+        }
+
+        /* Navbar */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background-color: black;
+            padding: 20px;
+        }
+
+        .navbar-links {
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar-links div {
+            color: white;
+            cursor: pointer;
+        }
+
+        /* Pricing Section */
+        .pricing-section {
+            text-align: center;
+            padding: 40px;
+        }
+
+        .pricing-section h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-section p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+        }
+
+        .pricing-plans {
+            display: flex;
+            justify-content: space-around;
+            align-items: flex-start;
+            margin-top: 20px;
+        }
+
+        .plan.pro {
+            flex: 1;
+            text-align: left;
+        }
+
+        .plan h2 {
+            font-size: 2rem;
+            margin-bottom: 10px;
+        }
+
+        .plan p {
+            margin-bottom: 20px;
+        }
+
+        .billing button {
+            background-color: black;
+            color: white;
+            border: 1px solid white; /* Add border for better visibility */
+            padding: 10px 15px;
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .billing button:hover {
+            background-color: #555;
+        }
+
+        /* Pricing Details */
+        .pricing-box {
+            flex: 1;
+            padding: 20px;
+            border: 1px solid #ccc;
+            text-align: left;
+        }
+
+        .basic {
+            background-color: #1a1a1a; /* Darker background for better contrast */
+        }
+
+        .free {
+            background-color: #333; /* Slightly lighter for visibility */
+        }
+
+        .pricing-box h3 {
+            font-size: 1.8rem;
+            margin-bottom: 10px;
+        }
+
+        .pricing-box ul {
+            list-style-type: none;
+            margin-top: 10px;
+        }
+
+        .pricing-box li {
+            margin-bottom: 10px;
+        }
+
+        .free li:nth-child(3) {
+            color: red;
+        }
+
+        .get-started {
+            background-color: black;
+            color: white;
+            border: 1px solid white; /* Add border for better visibility */
+            padding: 15px 30px;
+            cursor: pointer;
+            margin-top: 30px;
+        }
+
+        .get-started:hover {
+            background-color: #555;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="navbar-links">
+            <div>Pricing</div>
+            <div>Features</div>
+            <div>About</div>
+            <div>Contact</div>
+        </div>
+    </header>
+
+    <!-- Pricing Section -->
+    <section class="pricing-section">
+        <h1>One Price for Everything</h1>
+        <p>The simplest pricing in the Industry. You won't need a calculator for this.</p>
+
+        <!-- Pricing Plans -->
+        <div class="pricing-plans">
+            <!-- Pro Plan -->
+            <div class="plan pro">
+                <h2>Pro</h2>
+                <p>Includes everything you need for your professional website</p>
+                <div class="billing">
+                    <button>Bill Monthly</button>
+                    <button>Bill Yearly</button>
+                </div>
+            </div>
+
+            <!-- Basic Plan -->
+            <div class="pricing-box basic">
+                <h3>Basic</h3>
+                <p>$20 /Site/Month (billed annually)</p>
+                <ul>
+                    <li>✔ Custom Domains</li>
+                    <li>✔ Password Protection</li>
+                    <li>✔ GDPR Solution</li>
+                    <li>✔ Multilingual Sites</li>
+                </ul>
+            </div>
+
+            <!-- Free Plan -->
+            <div class="pricing-box free">
+                <h3>Free</h3>
+                <p>Everything from Pro, except:</p>
+                <ul>
+                    <li>✔ Beautiful Site Design</li>
+                    <li>✔ User Management</li>
+                    <li>No Custom Domains</li>
+                    <li>✔ Super-Fast Hosting</li>
+                    <li>✔ Unlimited Pages</li>
+                    <li>"Made with Umso" Branding</li>
+                    <li>✔ Analytics</li>
+                    <li>✔ Unlimited Team Members</li>
+                    <li>✔ Custom Forms</li>
+                    <li>✔ Blogging</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Get Started Button -->
+        <button class="get-started">Get Started</button>
+    </section>
+</body>
+</html>
